@@ -1,0 +1,26 @@
+{
+  "name": "captcha-slover",
+  "version": "1.2.12",
+  "description": "CAPTCHA solver browser extension with deobfuscation tools",
+  "main": "background.js",
+  "scripts": {
+    "deobfuscate": "node deobfuscate/cli.js",
+    "deobfuscate:background": "node deobfuscate/cli.js --input background.js --output background.deobfuscated.js",
+    "test": "node deobfuscate/test/run-tests.js"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.23.0",
+    "@babel/traverse": "^7.23.0",
+    "@babel/types": "^7.23.0",
+    "@babel/generator": "^7.23.0",
+    "commander": "^11.0.0"
+  },
+  "keywords": [
+    "captcha",
+    "deobfuscation",
+    "babel",
+    "ast"
+  ],
+  "author": "",
+  "license": "ISC"
+}
